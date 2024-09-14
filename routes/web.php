@@ -29,6 +29,7 @@ Route::get('/dashboard',[PresentaseController::class, 'laporanPersentase'])->mid
 
 Route::middleware('auth')->group(function () {
     Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+    Route::get('/feedback/{id}', [FeedbackController::class, 'show'])->name('feedback.show');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

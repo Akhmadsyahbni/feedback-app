@@ -45,7 +45,7 @@
                                         {{-- <a href="{{ route('admin.keluarga.edit_keluarga', ['id' => $item->id]) }}" class="btn btn-sm btn-warning">
                                             <i class="bi bi-pencil"></i>
                                         </a> --}}
-                                        <a href="#" class="btn btn-sm btn-info">
+                                        <a href="{{ route('feedback.show', ['id' => $item->id]) }}" class="btn btn-sm btn-info">
                                             <i class="bi bi-eye"></i>
                                         </a>
                                         <a href="#" class="btn btn-sm btn-danger">
